@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-primary bg-primary">
+            <a class="navbar-brand" href="#"><img src="./img/raia-logo.png" width="200px"
+                    alt="Logo da empresa Droga raia"></a>
+        </nav>
+    </header>
+    <main class="container">
+        <form id="formularioControlados" class="row mt-4 justify-content-center" action="">
+            <div class="col-md-8 form-group">
+                <header class="bg-primary text-light p-2 rounded mb-5 justify-content-center">Formulário de Controlados
+                </header>
+                <div class="p-2">
+                    <div class="row form-group">
+                        <div class="col-6">
+                            <label for="crmMedico">CRM do Médico</label>
+                            <input class="form-control border border-dark" type="number" id="crmMedico" name="crmMedico"
+                                placeholder="Digite o CRM do médico">
+                        </div>
+                        <div class="col-6">
+                            <label for="estado">Estado</label>
+                            <select name="" id="estado" class="form-control border border-dark">
+                                <option selected disabled>Estado</option>
+                                <option>SP</option>
+                                <option>Resto</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nomeMedico">Nome do Médico</label>
+                        <input class="form-control border border-dark" type="text" id="nomeMedico" name="nomeMedico"
+                            placeholder="Digite o nome do médico">
+                    </div>
+                    <label for="dataReceita">Data da Receita</label>
+                    <div class="form-group">
+                        <input class="form-control border border-dark" type="date" id="dataReceita" name="dataReceita"
+                            placeholder="Digite a data da receita">
+                    </div>
+                    <div class="form-group">
+                        <label for="qtdCaixas">Quantidade de Caixas</label>
+                        <input class="form-control border border-dark" type="number" id="qtdCaixas" name="qtdCaixas"
+                            placeholder="Digite a quantidade de caixas">
+                    </div>
+                    <div class="form-group">
+                        <label for="nomePaciente">Nome (Paciente)</label>
+                        <input class="form-control border border-dark" type="text" id="nomePaciente" name="nomePaciente"
+                            placeholder="Digite o nome do paciente">
+                    </div>
+                    <div class="form-group">
+                        <label for="cpfPaciente">CPF (Paciente)</label>
+                        <input class="form-control border border-dark" type="text" id="cpfPaciente" name="cpfPaciente"
+                            placeholder="Digite o CPF do paciente">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dataNasc">Data de nascimento (Paciente)</label>
+                        <input class="form-control border border-dark" type="date" id="dataNasc" name="dataNasc"
+                            placeholder="Digite seu CEP">
+                    </div>
+                    <div class="form-group">
+                        <label for="sexo">Sexo (Paciente)</label>
+                            <select name="sexo" id="sexo" class="form-control border border-dark">
+                                <option selected disabled>Selecione</option>
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+                                <option>Outro</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipoEnvio">Tipo de Envio</label>
+                            <select name="tipoEnvio" id="tipoEnvio" class="form-control border border-dark">
+                                <option selected disabled>Selecione</option>
+                                <option>Anexar Arquivo</option>
+                                <option>WhatsApp</option>
+                                <option>E-mail</option>
+                            </select>
+                    </div>
+                    <input class="btn btn-success" type="submit" value="enviar" id="btnEnviar" alt="botão de enviar">
+                </div>
+            </div>
+        </form>
+    </main>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
